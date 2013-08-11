@@ -1,7 +1,6 @@
 #!/bin/sh
 # load last n entries of your delicious rss feed
 # Author: Manu GM <mgmerino@gmail.com>
-
 function loadFeeds(){
   [ "$number" == "" ] && number=10
   curl -s http://feeds.delicious.com/v2/rss/$username?count=$number | grep -E -o "<link>(.*)</link>" | sed -e 's,.*<link>\([^<]*\)</link>.*,\1,g;1d' | sed -e 's;^;> ;'
