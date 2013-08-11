@@ -1,5 +1,6 @@
 #!/bin/sh
 # load last n entries of your delicious rss feed
+# Author: Manu GM <mgmerino@gmail.com>
 
 function loadFeeds(){
   [ "$number" == "" ] && number=10
