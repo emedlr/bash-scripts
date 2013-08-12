@@ -10,10 +10,11 @@ Collection of personal bash scripts and some other stuff that I try to learn.
 ``$ delicious -u mgmerino -n 10``
 
 * point.sh: uses curl and grep to show where an url from a shortener service (like bit.ly or goo.gl) points:
-````
+
+```
 $ point http://goo.gl/AK4D6u
 Location: http://chumfiesta.com/blog/
-````
+```
 
 Installing on your machine
 --------------------------
